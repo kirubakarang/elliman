@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css\elliman.css">
+</head>
+
+<body>
+  <div id="elliman">
+    <div class="task2">
+      <div class="header">
+        <a>ALL ELLIMAN AGENTS</a>
+        <h1 class="h1name">FIND A NEW YORK AGENT</h1>
+        <p class="para">Find an agent with local expertise and block-block knowledge of every neighborhood in New City
+        </p>
+        <form>
+          <div class="wrapper">
+            <div class="search_box">
+              <input type="text" id="myInput" onkeyup="search()" placeholder="Enter the name of an agent">
+              <div class="wrap"><span><i class="fa fa-search"></i></div>
+            </div>
+            <button id="button" type="submit" onclick="searchbar()">Search</button>
+          </div>
+        </form>
+      </div>
+      <div id="agents">
+        <div id="agent_filter" class="agent_filter">
+          <ul id="listnav" class="agent_list">
+            <li><a style="color:#099cbd" class="list_filter" href="#" onclick="agent_filter(this);">ALL</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">A</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">B</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">C</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">D</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">E</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">F</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">G</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">H</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">I</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">J</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">K</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">L</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">M</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">N</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">O</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">P</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">Q</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">R</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">S</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">T</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">U</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">V</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">W</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">X</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">Y</a></li>
+            <li><a class="list_filter" href="#" onclick="agent_filter(this);">Z</a></li>
+          </ul>
+          <div id="agents" class="contact_list">
+
+            <div class="contact">
+              <img class="avatar"
+                src="https://img-de.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fres.cloudinary.com%2Fdouglas-elliman%2Fimage%2Fupload%2Fw_800%2Fc_thumb%2Car_1%3A1%2Cg_face%2Fq_auto%3Abest%2FHeadShots%2F77%2Fwb4hadvccthsltpw7tud&option=N&idlisting=527-a-530-mchwl&w=480&permitphotoenlargement=false&fallbackimageurl=https%3A%2F%2Fstatic-ind-elliman-newyorkcity-production-1.gtsstatic.net%2Fresources%2Fsiteresources%2Fcommonresources%2Fimages%2Fnophoto%2Fde_website_holder_450x450.jpg"
+                width="280px">
+              <div class="contact_details">
+                <h2 id="name">Amanda Smith</h2>
+                <P>Licenesed Real Estate Salesperson</P>
+                <a>O:212.350.8500</a>
+                <a>M:917.771.223</a>
+                <a>michael.larocque@elliman.com</a>
+              </div>
+            </div>
+            <div class="contact">
+              <img class="avatar"
+                src="https://img-de.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fres.cloudinary.com%2Fdouglas-elliman%2Fimage%2Fupload%2Fw_800%2Fc_thumb%2Car_1%3A1%2Cg_face%2Fq_auto%3Abest%2FHeadShots%2F50%2Fxb4bsnwei0mvykdh3baf&option=N&idlisting=527-a-551-jesl&w=480&permitphotoenlargement=false&fallbackimageurl=https%3A%2F%2Fstatic-ind-elliman-newyorkcity-production-1.gtsstatic.net%2Fresources%2Fsiteresources%2Fcommonresources%2Fimages%2Fnophoto%2Fde_website_holder_450x450.jpg"
+                width="280px">
+              <div class="contact_details">
+                <h2 id="name">Jessica Levine</h2>
+                <P>Licenesed Real Estate Salesperson</P>
+                <a>O:212.350.8500</a>
+                <a>M:917.771.223</a>
+                <a>michael.larocque@elliman.com</a>
+              </div>
+            </div>
+            <div class="contact">
+              <img class="avatar"
+                src="https://img-de.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fres.cloudinary.com%2Fdouglas-elliman%2Fimage%2Fupload%2Fw_800%2Fc_thumb%2Car_1%3A1%2Cg_face%2Fq_auto%3Abest%2FHeadShots%2F98%2Ff2tart7xv9ngw8ts9yzc&option=N&idlisting=527-a-542-fre&w=480&permitphotoenlargement=false&fallbackimageurl=https%3A%2F%2Fstatic-ind-elliman-newyorkcity-production-3.gtsstatic.net%2Fresources%2Fsiteresources%2Fcommonresources%2Fimages%2Fnophoto%2Fde_website_holder_450x450.jpg"
+                width="280px">
+              <div class="contact_details">
+                <h2 id="name">Fredrick Eklund</h2>
+                <P>Licenesed Real Estate Salesperson</P>
+                <a>O:212.350.8500</a>
+                <a>M:917.771.223</a>
+                <a>michael.larocque@elliman.com</a>
+              </div>
+            </div>
+            <div class="contact">
+              <img class="avatar"
+                src="https://img-de.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fres.cloudinary.com%2Fdouglas-elliman%2Fimage%2Fupload%2Fw_800%2Fc_thumb%2Car_1%3A1%2Cg_face%2Fq_auto%3Abest%2FHeadShots%2F77%2Faiwldfrvmrcm5yvbvh5l&option=N&idlisting=527-a-542-eih&w=480&permitphotoenlargement=false&fallbackimageurl=https%3A%2F%2Fstatic-ind-elliman-newyorkcity-production.gtsstatic.net%2Fresources%2Fsiteresources%2Fcommonresources%2Fimages%2Fnophoto%2Fde_website_holder_450x450.jpg"
+                width="280px">
+              <div class="contact_details">
+                <h2 id="name">Eileen Hsu</h2>
+                <P>Licenesed Real Estate Salesperson</P>
+                <a>O:212.350.8500</a>
+                <a>M:917.771.223</a>
+                <a>michael.larocque@elliman.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="C:\Users\kirub\OneDrive\Desktop\elliman\js\index1.js"></script>
+</body>
+
+</html>

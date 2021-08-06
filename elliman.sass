@@ -1,0 +1,188 @@
+//colors
+$color_black_pearl: #08202c;
+$color_polar: #daf3f8;
+$color_cerulean: #00b1d7;
+$color_pacific_blue: #099cbd;
+$black: #000;
+$white: #fff;
+$gray: grey;
+$color_gray: #7f7f7f;
+
+//fonts
+$font_0: Arial,Helvetica,sans-serif;
+$font_1: Superior Title;
+
+* {
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+}
+body {
+	font-family: $font_0;
+	color: $color_black_pearl;
+}
+.header {
+	background-color: $color_polar;
+	font-size: 18px;
+	color: $color_black_pearl;
+	text-align: center;
+	padding: 30px;
+	a {
+		padding: 20px;
+		font-size: 15px;
+	}
+	p {
+		font-size: .85em;
+		line-height: 1.392;
+	}
+	h1 {
+		padding-bottom: 20px;
+		font-size: 25px;
+		letter-spacing: 8px;
+		padding-top: 20px;
+		color: $color_cerulean;
+	}
+}
+.wrapper {
+	width: 100%;
+	height: 20vh;
+	background-color: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search_box {
+	width: 50%;
+	position: relative;
+	input[type="text"] {
+		padding: 20px;
+		padding-bottom: 10px;
+		width: 100%;
+		padding-right: 60px;
+		box-sizing: border-box;
+		background-color: transparent;
+		border: 0;
+		border-bottom: 1px solid $color_pacific_blue;
+		outline: none;
+		font-family: $font_1, $font_0,;
+	}
+}
+::placeholder {
+	font-size: 1.25em;
+	color: $black;
+	font-family: $font_1, $font_0;
+	padding: 10px;
+}
+.fa-search {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	color: $color_pacific_blue;
+}
+#button {
+	width: 12%;
+	background-color: $color_pacific_blue;
+	font-size: large;
+	color: $white;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	margin-left: 10px;
+}
+.contact_list {
+	display: inline-flex;
+	padding: 40px;
+	background-color: $white;
+	font-size: 15px;
+}
+.contact {
+	padding: 18px;
+	a {
+		color: $color_pacific_blue;
+		display: block;
+	}
+	p {
+		color: $gray;
+	}
+}
+.agent_list {
+	list-style: none;
+	display: flex;
+	padding: 50px;
+	justify-content: center;
+	font-size: 1rem;
+	li {
+		font-size: .75em;
+		border-right: 1px solid $color_gray;
+		font-weight: 500;
+		line-height: 1.5em;
+		text-transform: uppercase;
+		padding-right: 18px;
+		padding-left: 18px;
+		&:last-child {
+			border-right: 0;
+		}
+	}
+	a {
+		text-decoration: none;
+		font-size: 15px;
+		color: $black;
+		font-weight: 300;
+	}
+	:active {
+		color: $color_pacific_blue;
+	}
+}
+.list_filter_all {
+	color: $color_pacific_blue;
+}
+@media(min-width:320px) and (max-width:768px) {
+	.header {
+		width: 121%;
+	}
+	.wrapper {
+		display: inline-block;
+		padding: 20px;
+	}
+	.search_box {
+		padding: 20px;
+		width: 100%;
+	}
+	#button {
+		padding: 10px;
+		display: inline-block;
+		margin-top: 10px;
+		width: 100%;
+	}
+	.agent_filter {
+		padding: 10px;
+		padding-left: 10px;
+	}
+	.agent_list {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 15px;
+	}
+	.contact_list {
+		display: inline-block;
+		padding: 30px;
+	}
+	.contact {
+		display: flex;
+		width: 50%;
+		padding-left: 0;
+		margin-left: 0;
+	}
+	.avatar {
+		width: 150px;
+		height: 130px;
+		padding-top: 25px;
+		display: flex;
+	}
+	.contact_details {
+		padding: 30px;
+		font-size: 10px;
+		p {
+			display: none;
+		}
+	}
+}
